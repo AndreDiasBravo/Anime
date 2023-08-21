@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ohayo JP | Welcome to Japan.">
+    <meta name="author" content="Ohayo JP">
+    <title> Food Specialities | Ohayo JP</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Font-Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- ===== Navigation Bar ===== -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="images/logo2.png">
+            </a>
+
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li>
+                        <a href="anime.html">Anime <i class="fa fa-chevron-down"></i></a>
+                        <ul class="sub_menu">
+                            <li><a href="naruto.html">Naruto</a></li>
+                            <li><a href="my-hero-academia.html">My Hero Academia</a></li>
+                            <li><a href="demon-slayer.html">Demon Slayer</a></li>
+                            <li><a href="jujutsu-kaisen.html">Jujutsu Kaisen</a></li>
+                            <li><a href="one-piece.html">One Piece</a></li>
+                            <li><a href="attack-on-titan.html">Attack On Titan</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="food-specialities.html" class="active">Food Specialities <i class="fa fa-chevron-down"></i></a>
+                        <ul class="sub_menu">
+                            <li><a href="sushi-and-sashimi.html">Sushi & Sashimi</a></li>
+                            <li><a href="ramen-miso-soup.html">Ramen & Miso Soup</a></li>
+                            <li><a href="gyoza.html">Gyoza</a></li>
+                            <li><a href="yakitori.html">Yakitori</a></li>
+                            <li><a href="okonomiyaki.html">Okonomiyaki</a></li>
+                            <li><a href="tempura.html">Tempura</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="drinks.html">Drinks <i class="fa fa-chevron-down"></i></a>
+                        <ul class="sub_menu">
+                            <li><a href="tea.html">Tea</a></li>
+                            <li><a href="sake.html">Sake</a></li>
+                            <li><a href="shochu.html">Shochu</a></li>
+                            <li><a href="umeshu.html">Umeshu</a></li>
+                            <li><a href="ramune.html">Ramune</a></li>
+                            <li><a href="awamori.html">Awamori</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="behavior.html">Behavior</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" id="bar"></i>
+        </nav>
+    </header>
+
+    <!-- ===== Mobile Menu ===== -->
+    <div class="popup-mobilemenu">
+        <div class="menu-inner">
+            <div class="menu-top">
+                <i class="fa-solid fa-close" id="close"></i>
+            </div>
+
+            <div class="content">
+                <nav id="sideNavMobile" class="mainmenu-nav">
+                    <ul class="navbar-list1">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li>
+                            <a href="anime.html">Anime</a>
+                            <ul class="sub_menu">
+                                <li><a href="naruto.html">Naruto</a></li>
+                                <li><a href="my-hero-academia.html">My Hero Academia</a></li>
+                                <li><a href="demon-slayer.html">Demon Slayer</a></li>
+                                <li><a href="jujutsu-kaisen.html">Jujutsu Kaisen</a></li>
+                                <li><a href="one-piece.html">One Piece</a></li>
+                                <li><a href="attack-on-titan.html">Attack On Titan</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="food-specialities.html" class="active">Food Specialities</a>
+                            <ul class="sub_menu">
+                                <li><a href="sushi-and-sashimi.html">Sushi & Sashimi</a></li>
+                                <li><a href="ramen-miso-soup.html">Ramen & Miso Soup</a></li>
+                                <li><a href="gyoza.html">Gyoza</a></li>
+                                <li><a href="yakitori.html">Yakitori</a></li>
+                                <li><a href="okonomiyaki.html">Okonomiyaki</a></li>
+                                <li><a href="tempura.html">Tempura</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="drinks.html">Drinks</a>
+                            <ul class="sub_menu">
+                                <li><a href="tea.html">Tea</a></li>
+                                <li><a href="sake.html">Sake</a></li>
+                                <li><a href="shochu.html">Shochu</a></li>
+                                <li><a href="umeshu.html">Umeshu</a></li>
+                                <li><a href="ramune.html">Ramune</a></li>
+                                <li><a href="awamori.html">Awamori</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="behavior.html">Behavior</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================================================================
+            PAGE HEADER
+    ========================================================================================== -->
+    <section class="page-header food-header">
+        <div class="container">
+            <h1>Food Specialities</h1>
+            <h2><a href="index.html">Home</a> / Food Specialities</h2>
+        </div>
+    </section>
+
+
+    <!-- ==========================================================================================
+            DRINKS SECTION
+    ========================================================================================== -->
+    <section class="section pt-5 linked_cards" id="food-specialities">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center gap-5">
+                <div class="flex-content w-75 text-center">
+                    <span class="red">JAPANESE FOODS</span>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt corporis deleniti sint perspiciatis dolore aut quam numquam dolorum sed at velit, enim suscipit expedita repellendus! Provident quibusdam blanditiis labore quasi.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-lg-4 col-md-6 pt-5">
+                    <div class="card" onclick="window.location.href='sushi-and-sashimi.html'">
+                        <img src="images/foods/sushi.jpg" class="card-img-top" alt="Japanese Sushi & Sashimi">
+                        <div class="card-body">
+                          <h3 class="card-title text-center fs-1">Sushi & Sashimi</h3>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsa tempore, a exercitationem veritatis labore.</p>
+                          <a href="sushi-and-sashimi.html" class="trailer-btn">View More</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 pt-5">
+                    <div class="card" onclick="window.location.href='ramen-miso-soup.html'">
+                        <img src="images/foods/ramen.jpg" class="card-img-top" alt="Japanese Ramen & Miso Soup">
+                        <div class="card-body">
+                          <h3 class="card-title text-center fs-1">Ramen & Miso Soup</h3>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsa tempore, a exercitationem veritatis labore.</p>
+                          <a href="ramen-miso-soup.html" class="trailer-btn">View More</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 pt-5">
+                    <div class="card" onclick="window.location.href='gyoza.html'">
+                        <img src="images/foods/gyoza.jpg" class="card-img-top" alt="Japanese Gyoza">
+                        <div class="card-body">
+                          <h3 class="card-title text-center fs-1">Gyoza</h3>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsa tempore, a exercitationem veritatis labore.</p>
+                          <a href="gyoza.html" class="trailer-btn">View More</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 pt-5">
+                    <div class="card" onclick="window.location.href='yakitori.html'">
+                        <img src="images/foods/yakitori.jpg" class="card-img-top" alt="Japanese Yakitori">
+                        <div class="card-body">
+                          <h3 class="card-title text-center fs-1">Yakitori</h3>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsa tempore, a exercitationem veritatis labore.</p>
+                          <a href="yakitori.html" class="trailer-btn">View More</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 pt-5">
+                    <div class="card" onclick="window.location.href='okonomiyaki.html'">
+                        <img src="images/foods/okono.jpg" class="card-img-top" alt="Japanese Okonomiyaki">
+                        <div class="card-body">
+                          <h3 class="card-title text-center fs-1">Okonomiyaki</h3>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsa tempore, a exercitationem veritatis labore.</p>
+                          <a href="okonomiyaki.html" class="trailer-btn">View More</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-12 col-lg-4 col-md-6 pt-5">
+                    <div class="card" onclick="window.location.href='tempura.html'">
+                        <img src="images/foods/tempura.jpg" class="card-img-top" alt="Japanese Tempura">
+                        <div class="card-body">
+                          <h3 class="card-title text-center fs-1">Tempura</h3>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ipsa tempore, a exercitationem veritatis labore.</p>
+                          <a href="tempura.html" class="trailer-btn">View More</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================================================================
+           FOOTER
+    ========================================================================================== -->
+
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- JS FILE -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

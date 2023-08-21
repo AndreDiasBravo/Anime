@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ohayo JP | Welcome to Japan.">
+    <meta name="author" content="Ohayo JP">
+    <title> Ramune | Ohayo JP</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Font-Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- ===== Navigation Bar ===== -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="images/logo2.png">
+            </a>
+
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li>
+                        <a href="anime.html">Anime <i class="fa fa-chevron-down"></i></a>
+                        <ul class="sub_menu">
+                            <li><a href="naruto.html">Naruto</a></li>
+                            <li><a href="my-hero-academia.html">My Hero Academia</a></li>
+                            <li><a href="demon-slayer.html">Demon Slayer</a></li>
+                            <li><a href="jujutsu-kaisen.html">Jujutsu Kaisen</a></li>
+                            <li><a href="one-piece.html">One Piece</a></li>
+                            <li><a href="attack-on-titan.html">Attack On Titan</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="food-specialities.html">Food Specialities <i class="fa fa-chevron-down"></i></a>
+                        <ul class="sub_menu">
+                            <li><a href="sushi-and-sashimi.html">Sushi & Sashimi</a></li>
+                            <li><a href="ramen-miso-soup.html">Ramen & Miso Soup</a></li>
+                            <li><a href="gyoza.html">Gyoza</a></li>
+                            <li><a href="yakitori.html">Yakitori</a></li>
+                            <li><a href="okonomiyaki.html">Okonomiyaki</a></li>
+                            <li><a href="tempura.html">Tempura</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="drinks.html" class="active">Drinks <i class="fa fa-chevron-down"></i></a>
+                        <ul class="sub_menu">
+                            <li><a href="tea.html">Tea</a></li>
+                            <li><a href="sake.html">Sake</a></li>
+                            <li><a href="shochu.html">Shochu</a></li>
+                            <li><a href="umeshu.html">Umeshu</a></li>
+                            <li><a href="ramune.html" class="active">Ramune</a></li>
+                            <li><a href="awamori.html">Awamori</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="behavior.html">Behavior</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" id="bar"></i>
+        </nav>
+    </header>
+
+    <!-- ===== Mobile Menu ===== -->
+    <div class="popup-mobilemenu">
+        <div class="menu-inner">
+            <div class="menu-top">
+                <i class="fa-solid fa-close" id="close"></i>
+            </div>
+
+            <div class="content">
+                <nav id="sideNavMobile" class="mainmenu-nav">
+                    <ul class="navbar-list1">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li>
+                            <a href="anime.html">Anime</a>
+                            <ul class="sub_menu">
+                                <li><a href="naruto.html">Naruto</a></li>
+                                <li><a href="my-hero-academia.html">My Hero Academia</a></li>
+                                <li><a href="demon-slayer.html">Demon Slayer</a></li>
+                                <li><a href="jujutsu-kaisen.html">Jujutsu Kaisen</a></li>
+                                <li><a href="one-piece.html">One Piece</a></li>
+                                <li><a href="attack-on-titan.html">Attack On Titan</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="food-specialities.html">Food Specialities</a>
+                            <ul class="sub_menu">
+                                <li><a href="sushi-and-sashimi.html">Sushi & Sashimi</a></li>
+                                <li><a href="ramen-miso-soup.html">Ramen & Miso Soup</a></li>
+                                <li><a href="gyoza.html">Gyoza</a></li>
+                                <li><a href="yakitori.html">Yakitori</a></li>
+                                <li><a href="okonomiyaki.html">Okonomiyaki</a></li>
+                                <li><a href="tempura.html">Tempura</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="drinks.html" class="active">Drinks</a>
+                            <ul class="sub_menu">
+                                <li><a href="tea.html">Tea</a></li>
+                                <li><a href="sake.html">Sake</a></li>
+                                <li><a href="shochu.html">Shochu</a></li>
+                                <li><a href="umeshu.html">Umeshu</a></li>
+                                <li><a href="ramune.html" class="active">Ramune</a></li>
+                                <li><a href="awamori.html">Awamori</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="behavior.html">Behavior</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================================================================
+            PAGE HEADER
+    ========================================================================================== -->
+    <section class="page-header separate_anime_page tea-header">
+        <div class="container">
+            <h1>Ramune</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sit repellat illum autem exercitationem
+                quos recusandae magnam ducimus maxime architecto.</p>
+
+            <a href="#ramune" class="trailer-btn"><i class="fa fa-play-circle"></i>
+                Explore More</a>
+        </div>
+    </section>
+
+
+    <!-- ==========================================================================================
+            DETAILS
+    ========================================================================================== -->
+    <section class="section pt-5" id="ramune">
+        <div class="container">
+            <div class="row align-items-center gap-lg-0 gap-5">
+                <div class="flex-img col-12 col-lg-6">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/C6vmu2CJQyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <span class="red">Japanese Ramune Soda</span>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt corporis deleniti sint
+                        perspiciatis dolore aut quam numquam dolorum sed at velit, enim suscipit expedita repellendus!
+                        Provident quibusdam blanditiis labore quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, minus a unde eaque ex vel praesentium ipsum assumenda animi molestiae.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================================================================
+            GALLERY
+    ========================================================================================== -->
+    <section class="section pt-5 mt-5 characters">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center gap-5">
+                <div class="flex-content w-75 text-center">
+                    <span class="red">Gallery</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="MultiCarousel" data-items="1,2,3,4" data-slide="3" id="MultiCarousel" data-interval="3000">
+                    <div class="MultiCarousel-inner">
+                        <div class="item">
+                            <div class="pad15">
+                                <div class="MultiCarousel_img">
+                                    <img src="https://i.pinimg.com/564x/0b/e5/77/0be577b161c2ac493cd6f91a3816a39f.jpg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <div class="MultiCarousel_img">
+                                    <img src="https://i.pinimg.com/564x/15/ee/49/15ee492d6dd76c7877137c426f680ee3.jpg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <div class="MultiCarousel_img">
+                                    <img src="https://i.pinimg.com/564x/f3/20/e2/f320e2138e539f6e1173cfc665fe2caf.jpg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <div class="MultiCarousel_img">
+                                    <img src="https://i.pinimg.com/564x/88/26/c6/8826c68b5ea8f3abbd735f62526880fe.jpg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <div class="MultiCarousel_img">
+                                    <img src="https://i.pinimg.com/564x/bd/ec/90/bdec907a904f003383ab73f5237da550.jpg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary leftLst"><i class="fa fa-chevron-left"></i> </button>
+                            <button class="btn btn-primary rightLst"><i class="fa fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- ==========================================================================================
+            STORY
+    ========================================================================================== -->
+    <section class="section pt-5">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center gap-5">
+                <div class="flex-content w-75 text-center">
+                    <span class="red">History</span>
+                </div>
+            </div>
+
+            <div class="row align-items-center gap-lg-0 gap-5 pt-5">
+                <div class="col-12 col-lg-12">
+                    <span class="fs-1 text-white fw-bold lh-1 d-block mb-3">Japanese Ramune Soda</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt corporis deleniti sint
+                        perspiciatis dolore aut quam numquam dolorum sed at velit, enim suscipit expedita repellendus!
+                        Provident quibusdam blanditiis labore quasi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis placeat quae voluptatem quos aut molestias voluptate laboriosam unde atque beatae!</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto exercitationem voluptas repudiandae harum incidunt quos omnis aliquid. Optio suscipit consequuntur reprehenderit accusantium, recusandae, a earum ea dolore nam aperiam ratione voluptates voluptatem alias, aliquam inventore quibusdam eos nulla repellat. Quibusdam quaerat, labore itaque ducimus enim consequatur. Dolorem praesentium eius officiis expedita quo veniam consequuntur tempora adipisci nostrum molestias, nulla fugit, quidem, facilis id illo? Quos nam ea deleniti facilis quam perferendis optio culpa obcaecati sapiente deserunt! Laudantium provident cumque modi neque accusantium exercitationem laborum doloribus numquam. Dolorum dolor sequi blanditiis nostrum alias. Officia vitae labore, voluptate blanditiis recusandae quas repudiandae.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ==========================================================================================
+           FOOTER
+    ========================================================================================== -->
+
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            var itemsMainDiv = ('.MultiCarousel');
+            var itemsDiv = ('.MultiCarousel-inner');
+            var itemWidth = "";
+
+            $('.leftLst, .rightLst').click(function () {
+                var condition = $(this).hasClass("leftLst");
+                if (condition)
+                    click(0, this);
+                else
+                    click(1, this)
+            });
+
+            ResCarouselSize();
+
+
+
+
+            $(window).resize(function () {
+                ResCarouselSize();
+            });
+
+            //this function define the size of the items
+            function ResCarouselSize() {
+                var incno = 0;
+                var dataItems = ("data-items");
+                var itemClass = ('.item');
+                var id = 0;
+                var btnParentSb = '';
+                var itemsSplit = '';
+                var sampwidth = $(itemsMainDiv).width();
+                var bodyWidth = $('body').width();
+                $(itemsDiv).each(function () {
+                    id = id + 1;
+                    var itemNumbers = $(this).find(itemClass).length;
+                    btnParentSb = $(this).parent().attr(dataItems);
+                    itemsSplit = btnParentSb.split(',');
+                    $(this).parent().attr("id", "MultiCarousel" + id);
+
+
+                    if (bodyWidth >= 1200) {
+                        incno = itemsSplit[3];
+                        itemWidth = sampwidth / incno;
+                    }
+                    else if (bodyWidth >= 992) {
+                        incno = itemsSplit[2];
+                        itemWidth = sampwidth / incno;
+                    }
+                    else if (bodyWidth >= 768) {
+                        incno = itemsSplit[1];
+                        itemWidth = sampwidth / incno;
+                    }
+                    else {
+                        incno = itemsSplit[0];
+                        itemWidth = sampwidth / incno;
+                    }
+                    $(this).css({ 'transform': 'translateX(0px)', 'width': itemWidth * itemNumbers });
+                    $(this).find(itemClass).each(function () {
+                        $(this).outerWidth(itemWidth);
+                    });
+
+                    $(".leftLst").addClass("over");
+                    $(".rightLst").removeClass("over");
+
+                });
+            }
+
+
+            //this function used to move the items
+            function ResCarousel(e, el, s) {
+                var leftBtn = ('.leftLst');
+                var rightBtn = ('.rightLst');
+                var translateXval = '';
+                var divStyle = $(el + ' ' + itemsDiv).css('transform');
+                var values = divStyle.match(/-?[\d\.]+/g);
+                var xds = Math.abs(values[4]);
+                if (e == 0) {
+                    translateXval = parseInt(xds) - parseInt(itemWidth * s);
+                    $(el + ' ' + rightBtn).removeClass("over");
+
+                    if (translateXval <= itemWidth / 2) {
+                        translateXval = 0;
+                        $(el + ' ' + leftBtn).addClass("over");
+                    }
+                }
+                else if (e == 1) {
+                    var itemsCondition = $(el).find(itemsDiv).width() - $(el).width();
+                    translateXval = parseInt(xds) + parseInt(itemWidth * s);
+                    $(el + ' ' + leftBtn).removeClass("over");
+
+                    if (translateXval >= itemsCondition - itemWidth / 2) {
+                        translateXval = itemsCondition;
+                        $(el + ' ' + rightBtn).addClass("over");
+                    }
+                }
+                $(el + ' ' + itemsDiv).css('transform', 'translateX(' + -translateXval + 'px)');
+            }
+
+            //It is used to get some elements from btn
+            function click(ell, ee) {
+                var Parent = "#" + $(ee).parent().attr("id");
+                var slide = $(Parent).attr("data-slide");
+                ResCarousel(ell, Parent, slide);
+            }
+
+        });
+    </script>
+
+    <!-- JS FILE -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
